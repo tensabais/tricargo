@@ -1,0 +1,33 @@
+<h1>Gerencia</h1>
+<h4>Lista de Clientes</h4>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Dirección</th>
+        <th>Número celular</th>
+        <th>Correo electrónico</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let persona of clientes">
+        <tr>
+            <td>{{persona.codigo}}</td>
+            <td>{{persona.nombre}}</td>
+            <td>{{persona.apellido}}</td>
+            <td>{{persona.direccion}}</td>
+            <td>{{persona.numeroCelular}}</td>
+            <td>{{persona.correoElectronico}}</td>
+            <td>
+            <button type="button" class="btn btn-dark"
+            [routerLink]="['/form/', persona.codigo]">Editar</button>    
+            <button type="button"
+            class="btn btn-danger"
+            name="borrar"
+            (click)="delete(persona)"
+            >Borrar</button></td>
+        </tr>
+    </tbody>
+</table>

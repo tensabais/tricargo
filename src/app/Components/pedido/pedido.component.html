@@ -1,0 +1,33 @@
+<h1>Gerencia</h1>
+<h4>Lista de Pedidos</h4>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Código</th>
+        <th>Fecha de Pedido</th>
+        <th>Fecha de Entrega</th>
+        <th>Precio</th>
+        <th>Cliente</th>
+        <th>Transporte</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let persona of pedidos">
+        <tr>
+            <td>{{persona.codigo}}</td>
+            <td>{{persona.fechaPedido | date:"d/M/yy"}}</td>
+            <td>{{persona.fechaEntrega | date:"d/M/yy"}}</td>
+            <td>{{persona.precio}}</td>
+            <td>{{persona.cliente}}</td>
+            <td>{{persona.trans}}</td>
+            <td>
+                <button type="button" class="btn btn-dark"
+                [routerLink]="['/formul/', persona.codigo]">Editar</button>  
+                <button type="button"
+                class="btn btn-danger"
+                name="borrar"
+                (click)="delete(persona)"
+                >Borrar</button></td>
+        </tr>
+    </tbody>
+</table>

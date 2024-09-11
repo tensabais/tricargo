@@ -1,0 +1,59 @@
+<div class="perr"></div>
+    <div class="card-header">Agregar Cliente</div>
+    <div class="card-body">
+        <form (ngSubmit)="create()" >
+            <div class="form-group row">
+                <label for="nombre" class="col-form-label col-sm-2">
+                    Nombre
+                </label>
+                <input type="text" class="form-control" required minlength="3"
+                name="nombre" placeholder="nombre"
+                [(ngModel)]="persona.nombre"/>
+            </div>
+            <div class="form-group row">
+                <label for="apellido" class="col-form-label col-sm-2">
+                    Apellido
+                </label>
+                <input type="text" class="form-control" required minlength="3"
+                name="apellido" placeholder="apellido"
+                [(ngModel)]="persona.apellido" /> 
+            </div>
+            <div class="form-group row">
+                <label for="direccion" class="col-form-label col-sm-2">
+                    Dirección
+                </label>
+                <input type="text" class="form-control" required
+                name="direccion" placeholder="dirección"
+                [(ngModel)]="persona.direccion"/>
+            </div>
+            <div class="form-group row">
+                <label for="numeroCelular" class="col-form-label col-sm-2">
+                    Número Celular
+                </label>
+                <input type="number" class="form-control" required
+                name="numeroCelular" placeholder="número celular"
+                [(ngModel)]="persona.numeroCelular"/>
+            </div>
+            <div class="form-group row">
+                <label for="correoElectronico" class="col-form-label col-sm-2">
+                    Correo Electrónico
+                </label>
+                <input type="email" class="form-control" required
+                name="correoElectronico" placeholder="correo electrónico"
+                [(ngModel)]="persona.correoElectronico"/>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <button role="button" class="btn btn-primary"
+                    *ngIf="!persona.codigo else elseblock"
+                    >
+                        Crear
+                    </button>
+                    <ng-template #elseblock>
+                    <button type="button" class="btn btn-info" 
+                    (click)="update()">Editar</button>
+                    </ng-template>
+                </div>
+            </div>
+        </form>
+    </div>

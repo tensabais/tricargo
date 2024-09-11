@@ -1,0 +1,170 @@
+
+<header class="header">
+	
+    
+	<div class="text-box">
+		<h1 class="heading-primary">
+			<span class="heading-primary-main">Logística T.R.I cargo S.A.S</span>
+			<br/>
+			<span class="heading-primary-sub">Transporte internacional de carga, manejo de importaciones y exportaciones, vía aérea, marítima, terrestre transporte local. Comercio exterior en general.</span>
+		</h1>
+		<a class="btn btn-white btn-animated" [routerLink]="['/acercade/']">ACERCA DE NOSOTROS</a>
+	</div>
+</header>
+<p class="parrafo">"Transporta lo que usted y su empresa necesitan desde
+	 cualquier lugar del mundo es por eso que le ofrece un servicio de importaciones con un 
+	 acompañamiento total desde el país de origen hasta la puerta de su empresa"
+</p>
+<p class="titulo">
+     Sevicios Disponibles
+</p>
+<div class="imagen">
+
+	<table>
+        <tr>
+            <td><img src="https://i.pinimg.com/originals/d6/2b/91/d62b914376eae43839c1339e929e06a7.png" >
+				<p class="parr">Transporte Aéreo</p></td>
+            <td><img src="https://img.freepik.com/vector-premium/buque-carga-icono-negro-lleva-contenedores-al-puerto_124715-2248.jpg?w=1380">
+				<p class="parr">Transporte Marítimo </p></td>
+			<td><img src="https://img.freepik.com/vector-premium/camion-semirremolque-blanco-negro_74218-340.jpg?w=1480">         
+				<p class="parr">Transporte por Carretera</p>	
+		</td>
+        </tr>
+    </table>
+	
+
+</div>
+<br/>
+<style>
+.header {
+  	height: 90vh;
+  	background-image: 
+	  linear-gradient(to bottom, 
+	  rgba(19, 90, 117, 0.8),
+     rgba(15, 166, 38, 0.8)),
+     url('https://www.prosegur.es/dam/jcr:8fe16839-839d-463a-90a6-32ab4bbc8158/tipos%20transporte%20mercancias.jpg');
+	background-size: cover;
+  	background-position: top;
+  	position: relative;
+
+  	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box {
+  	position: absolute;
+  	top: 40px;
+  	left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.heading-primary {
+  	color: rgb(255, 255, 255);
+  	text-transform: uppercase;
+
+  	backface-visibility: hidden;
+  	margin-bottom: 30px;
+	
+}
+
+.heading-primary-main {
+  	display: block;
+  	font-size: 26px;
+  	font-weight: 600;
+	font: bold 90%;
+}
+
+.heading-primary-sub {
+  	display: block;
+  	font-size: 16px;
+  	font-weight: 400;
+	line-height: 200%;
+
+}
+
+.btn:link,
+.btn:visited {
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	padding: 10px 20px;
+  	display: inline-block;
+  	border-radius: 100px;
+  	transition: all .2s;
+  	position: relative;
+}
+
+.btn:hover {
+  	transform: translateY(-3px);
+  	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  	transform: translateY(-1px);
+  	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  	background-color: #fff;
+  	color: rgb(43, 42, 42);
+	font-size: 14px;
+}
+.parrafo{
+	font-size: 16px;
+  	font-weight: 600;
+	line-height: 200%;
+	font-style: italic;
+	text-align:center;
+	margin-top: 70px;
+    margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 70px;
+}
+.titulo{
+	font-size: 26px;
+  	font-weight: 700;
+	line-height: 200%;
+	text-align:center;
+	margin-top: 70px;
+    margin-left: 100px;
+	margin-right: 100px;
+}
+.imagen{
+	background-color: white;
+	margin-top: 50px;
+	margin-left: 230px;
+	margin-right: 210px;
+	height: 210px;
+	text-align: center;
+	border: rgba(15, 166, 38, 0.8) 5px solid;
+	
+
+}
+img{
+	width: 200px;
+	height: 100px;
+	object-fit: cover;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	margin-left: 120px;
+	margin-right: 50px;
+	
+}
+.parr{
+	font-size: 18px;
+  	font-weight: 700;
+	color:rgb(31, 31, 31);
+	margin-left: 70px;
+	
+}
+
+
+
+</style>
