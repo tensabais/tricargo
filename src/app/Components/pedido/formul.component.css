@@ -1,0 +1,16 @@
+.card-header{
+    text-align: center;
+    font-size: large;
+    background-color: rgba(19, 117, 101, 0.8);
+    color: white;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+button{
+    background-color:  rgba(19, 117, 101, 0.8);
+}
+.form-group{
+    margin-left: 150px;
+    margin-right: 150px;
+}
